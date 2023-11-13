@@ -4,6 +4,7 @@
 #include "IScene.h"
 #include "TitleScene.h"
 #include "StageScene.h"
+#include "ClearScene.h"
 
 class GameManager
 {
