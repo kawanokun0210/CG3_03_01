@@ -1,13 +1,14 @@
 #include "ClearScene.h"
 
 void ClearScene::Initialize() {
-	// キー入力を受け取る
-	memcpy(preKeys, keys, 256);
-	Novice::GetHitKeyStateAll(keys);
+
 }
 
 void ClearScene::Update() {
-	Initialize();
+	// キー入力を受け取る
+	memcpy(preKeys, keys, 256);
+	Novice::GetHitKeyStateAll(keys);
+
 	if (preKeys[DIK_SPACE] == 0 && keys[DIK_SPACE]) {
 		sceneNo = TITLE;
 	}
